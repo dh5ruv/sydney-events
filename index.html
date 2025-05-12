@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydney Events Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Sydney Events Finder</h1>
+            <p>Discover the best events happening in Sydney, Australia</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all">All Events</button>
+                <button class="filter-btn" data-category="music">Music</button>
+                <button class="filter-btn" data-category="arts">Arts & Culture</button>
+                <button class="filter-btn" data-category="food">Food & Drink</button>
+                <button class="filter-btn" data-category="sports">Sports</button>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search events...">
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div id="events-container" class="events-grid">
+            <!-- Events will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <div id="email-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Almost there!</h2>
+            <p>Enter your email to continue to the ticket page.</p>
+            <form id="email-form">
+                <div class="form-group">
+                    <input type="email" id="email-input" placeholder="Your email address" required>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="opt-in" required>
+                    <label for="opt-in">I agree to receive updates about events in Sydney</label>
+                </div>
+                <button type="submit" class="submit-btn">Continue to Tickets</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sydney Events Finder. All rights reserved.</p>
+            <p>Events are automatically collected from various sources across Sydney.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
